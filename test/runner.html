@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>gmaps.geofences test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+  <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script src="../dist/gmaps.geofences.js"></script>
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+      font-weight: lighter;
+      text-transform: lowercase;
+      font-variant: small-caps;
+    }
+
+    .map,
+    .panorama {
+      width: 90%;
+      height: 200px;
+      margin: 20px auto;
+    }
+
+    .with-columns {
+      display: block;
+      width: 90%;
+      overflow: hidden;
+    }
+
+    .with-columns .map,
+    .with-columns .panorama {
+      display: block;
+      width: 50%;
+      height: 200px;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <div id="mocha"></div>
+  <div class="map" id="geofences"></div>
+  <script src="support/should.min.js"></script>
+  <script src="support/expect.min.js"></script>
+  <script src="../node_modules/mocha/mocha.js"></script>
+  <script>mocha.setup('bdd');</script>
+  <script src="index.js"></script>
+  <script>
+    if (window.mochaPhantomJS) {
+      mochaPhantomJS.run();
+    } else {
+      mocha.run();
+    }
+  </script>
+</body>
+</html>

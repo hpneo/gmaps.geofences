@@ -1,0 +1,22 @@
+{
+  "node": true,
+  "browser": true,
+  "browserify": true,
+  "jquery": true,
+  "curly": true,
+  "latedef": true,
+  "undef": true,
+  "unused": true,
+  "camelcase": true,
+  "eqeqeq": true,
+  "newcap": true,
+  "strict": true,
+  "nonbsp": true,
+  "notypeof": true,
+  "loopfunc": true,
+  "validthis": true,
+  "globals": {
+    "google": true,
+    "GMaps": true
+  }
+}
